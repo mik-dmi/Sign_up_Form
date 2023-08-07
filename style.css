@@ -6,8 +6,7 @@ html,body {
     height: 100%;   
     width: 100v;
     margin: 0; 
-  }
-  
+} 
 body{
     display: flex;
     justify-content: center;
@@ -36,7 +35,6 @@ body{
     height: 10rem;
     background-color: rgba(0, 0, 0, 0.676); 
     margin-top: 15rem; 
-
 }
 .logo{
     background-image: url("/odin-lined.png");
@@ -55,6 +53,8 @@ body{
     height: 100%;
     background: rgb(104, 211, 243);   
     width: 100%; 
+    display: flex;
+    flex-direction: column;
 }
 .right_title{
     font-size: 5rem;
@@ -65,7 +65,7 @@ body{
     margin-top: 10rem;
     margin-bottom: 3rem;
 }
-form{
+.div_form{
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -74,17 +74,13 @@ form{
     background: #76b9c4;
     padding: 2rem;
     border-radius: 0.5rem;
-
-    
-
 }
 fieldset{
     display: flex;
     flex-direction: column;
     width: 40%;
     justify-content: space-between;
-    border: none;
-    
+    border: none;    
 }
 label{
     font-size: 20px;
@@ -94,6 +90,26 @@ label{
 input{
     border: 0px;
     border: none;
-    border-radius: 4px;
+    border-radius: 0.4rem;
     height: 2rem;
+}
+.create_account_button{
+    padding: 1rem;
+    background: #224aa0;
+    border-radius: 0.5rem;
+    font-size: 2em;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    margin-left:4rem;
+    align-self: flex-start;
+    font-weight: 800;
+    transition: transform 0.3s ease;
+}
+.create_account_button:hover {
+    background-color: #3c5ca2; /* Change the background color when hovering over the button */
+  }
+.create_account_button:active {
+   transform: translateY(0.25em); /* Move the button horizontally when it's clicked */
 }

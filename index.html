@@ -17,35 +17,37 @@
         <div class="right_container">
             <div class="right_title">Start Here!</div>
             <form action="" method="post">
-                <fieldset>
-                    <label for="first_name">First Name:</label>
-                    <input type="text" id="first_name">
-                </fieldset>
-                <fieldset>
-                    <label for="last_name">Last Name:</label>
-                    <input type="text" id="last_name">   
-                </fieldset>
-                <fieldset>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email"> 
-                </fieldset>
-                <fieldset> 
-                    <label for="phone_number">Phone Number:</label>
-                    <input type="tel" id="phone_number">   
-                </fieldset>
-                <fieldset>
-                    <label for="user_password">Password:</label>
-                    <input type="password" id="user_password">
-                </fieldset>
-                <fieldset>
-                    <label for="confirm_password">Confirm Password:</label>
-                    <input type="password" id="confirm_password">
-                </fieldset>
+                <div class="div_form">
+                    <fieldset>
+                        <label for="first_name">*First Name:</label>
+                        <input type="text" id="first_name" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="last_name">*Last Name:</label>
+                        <input type="text" id="last_name" required>   
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">*Email:</label>
+                        <input type="email" id="email" required> 
+                    </fieldset>
+                    <fieldset> 
+                        <label for="phone_number">Phone Number:</label>
+                        <input type="tel" id="phone_number">   
+                    </fieldset>
+                    <fieldset>
+                        <label for="user_password">*Password:</label>
+                        <input type="password" minlength="8" id="user_password" required>
+                    </fieldset>
+                    <fieldset>
+                        <label for="confirm_password">*Confirm Password:</label>
+                        <input type="password" id="confirm_password" required>
+                    </fieldset>
+                </div>
+                <button type="submit" class="create_account_button">Create Account</button>
             </form>
+            
         </div>
     </div>
-
-
 
 
 <script src="java_script.js"></script>
