@@ -88,8 +88,8 @@ label{
     color: white;
 }
 input{
-    border: 0px;
-    border: none;
+    border: 2px solid gray;
+    outline: none;
     border-radius: 0.4rem;
     height: 2rem;
 }
@@ -108,8 +108,25 @@ input{
     transition: transform 0.3s ease;
 }
 .create_account_button:hover {
-    background-color: #3c5ca2; /* Change the background color when hovering over the button */
+    background-color: #3c5ca2; 
   }
 .create_account_button:active {
-   transform: translateY(0.25em); /* Move the button horizontally when it's clicked */
+   transform: translateY(0.25em); 
 }
+
+input:focus {
+    border: 2px solid blue; 
+    outline: none;
+  }
+  
+  input:invalid:not(:focus) {
+    border: 2px solid red;
+    outline: none;
+  }
+  input:valid{
+    border: 2px solid green; 
+    outline: none;
+
+  }
+  
+  
