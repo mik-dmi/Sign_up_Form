@@ -22,7 +22,7 @@ body{
     background: red;
 }
 .left_container{
-    background-image: url("/photo_background.jpg");
+    background-image: URL("./photo_background.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;  
